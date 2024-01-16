@@ -235,6 +235,73 @@ function click9() {
     }
 }
 
+function keyPress() {
+    document.addEventListener('keydown', (event) => {
+        console.log('Tecla pressionada:', event.key);
+        switch (event.key) {
+            case '0':
+                click0()
+                break
+            case '1':
+                click1()
+                break
+            case '2':
+                click2()
+                break
+            case '3':
+                click3()
+                break
+            case '4':
+                click4()
+                break
+            case '5':
+                click5()
+                break
+            case '6':
+                click6()
+                break
+            case '7':
+                click7()
+                break
+            case '8':
+                click8()
+                break
+            case '9':
+                click9()
+                break
+            case '.':
+                clickDot()
+                break
+            case '+':
+                clickSum()
+                break
+            case '-':
+                clickSub()
+                break
+            case '*':
+                clickMult()
+                break
+            case '/':
+                clickDivide()
+                break
+            case '%':
+                clickPorcent()
+                break
+            case '=':
+                clickEqual()
+                break
+            case 'Enter':
+                clickEqual()
+                break
+            default:
+                return
+        }
+    });
+}
+
+keyPress()
+
+
 //FUNÇÕES DAS OPERAÇÕES
 function clickAC() {
     tela.innerText = '0'
@@ -375,7 +442,7 @@ function clickEqual() {
 function clickDot() {
     const dotString = '.'
 
-    if (equalToDo.length < 1 || equalToDo.length > 1) {
+    if (equalToDo.length < 1 || equalToDo.length > 6) {
         return
     } else {
         equalToDo.push(dotString)
