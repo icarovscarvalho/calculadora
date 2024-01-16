@@ -77,66 +77,70 @@ p {
 
 .individualButton-Calc {
   background-color: #7F8F9F;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6588235294);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 8px;
+  border-bottom: 3px solid #bec1c5;
   min-width: 50px;
   cursor: pointer;
 }
 .individualButton-Calc:active {
-  box-shadow: 0px 0px 10px #ffffff;
+  border-bottom: 0px solid #7F8F9F;
+  border-top: 3px solid #4c6581;
 }
 
 .plusButton-Calc {
   background-color: #61A9DA;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6588235294);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 8px;
+  border-bottom: 3px solid #bec1c5;
   min-width: 50px;
   cursor: pointer;
-  height: 95px;
+  height: 102px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .plusButton-Calc:active {
-  box-shadow: 0px 0px 10px #ffffff;
+  border-bottom: 0px solid #7F8F9F;
+  border-top: 3px solid #4c6581;
 }
 
 .ac-Button-Calc {
   background-color: #EB5757;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6588235294);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 8px;
+  border-bottom: 3px solid #bec1c5;
   min-width: 50px;
   cursor: pointer;
   text-transform: uppercase;
   font-size: 0.9em;
 }
 .ac-Button-Calc:active {
-  box-shadow: 0px 0px 10px #ffffff;
+  border-bottom: 0px solid #7F8F9F;
+  border-top: 3px solid #4c6581;
 }
 
 .functionButton-Calc {
   background-color: #68C6AB;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6588235294);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 8px;
+  border-bottom: 3px solid #bec1c5;
   min-width: 50px;
   cursor: pointer;
 }
 .functionButton-Calc:active {
-  box-shadow: 0px 0px 10px #ffffff;
+  border-bottom: 0px solid #7F8F9F;
+  border-top: 3px solid #4c6581;
 }/*# sourceMappingURL=style.css.map */

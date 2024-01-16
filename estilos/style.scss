@@ -5,6 +5,7 @@ sans-serif;*/
 
 $corcalc: #4c6581;
 $corcalcsombra: #223544;
+$corcalclight: #bec1c5;
 $corbuttons: #7F8F9F;
 $corbuttonplus: #61A9DA;
 $corbuttonoff: #EB5757;
@@ -16,18 +17,21 @@ $corborda: #000000;
 $corbasetemp: #d3d3d3;
 
 @mixin buttonDefault(){
-    box-shadow: 0px 0px 5px #000000a8;
+    // box-shadow: 0px 0px 5px #000000a8;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 8px;
+    border-bottom: 3px solid $corcalclight;
     min-width: 50px;
     cursor: pointer;
 }
 
 @mixin buttonClick(){
-    box-shadow: 0px 0px 10px #ffffff;
+    // box-shadow: 0px 0px 10px #00000069;
+    border-bottom: 0px solid $corbuttons;
+    border-top: 3px solid $corcalc;
 }
 
 * {
@@ -115,7 +119,7 @@ p{
 .plusButton-Calc{
     background-color: $corbuttonplus;
     @include buttonDefault();
-    height: 95px;
+    height: 102px;
 
     display: flex;
     justify-content: center;

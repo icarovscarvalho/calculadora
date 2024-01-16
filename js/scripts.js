@@ -393,6 +393,7 @@ function clickSum() {
     opVerif = allOperations[0]
 
     console.log(opVerif)
+    console.log(equalToDo)
 }
 
 function clickEqual() {
