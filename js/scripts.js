@@ -7,12 +7,14 @@ const equalToDo = []
 
 let primeiroValor = 0
 let sengundoValor = 0
-let opVerif = ""
+let resultado = 0
+let opVerif;
 let handleEqualVerf = false
 
 //FUNÇÕES INDIRETAS
 function clearTela() {
     if (equalToDo.length < 1 || handleEqualVerf == true) {
+        resultado = 0
         tela.innerText = ''
         funcHandleEqual()
     } else {
@@ -238,6 +240,7 @@ function click9() {
 function keyPress() {
     document.addEventListener('keydown', (event) => {
         console.log('Tecla pressionada:', event.key);
+        console.log(event)
         switch (event.key) {
             case '0':
                 click0()
@@ -300,7 +303,6 @@ function keyPress() {
 }
 
 keyPress()
-
 
 //FUNÇÕES DAS OPERAÇÕES
 function clickAC() {
@@ -400,10 +402,10 @@ function clickEqual() {
     switch(opVerif) {
         case 'somar':
             tela.innerText = ''
-            console.log('resultado aqui em baixo')
             tela.append(somar(primeiroValor,sengundoValor))
             equalToDo.splice(0,8)
             equalToDo.push(somar(primeiroValor,sengundoValor))
+            resultado = equalToDo
             break;
         case 'subtrair':
             tela.innerText = ''
@@ -441,12 +443,17 @@ function clickEqual() {
 
 function clickDot() {
     const dotString = '.'
+    let haveDotInside;
 
-    if (equalToDo.length < 1 || equalToDo.length > 6) {
+    const dotFound = equalToDo.indexOf(dotString)
+    haveDotInside = dotFound
+
+    if (equalToDo.length < 1 || equalToDo.length > 6 || resultado.length == 1) {
         return
     } else {
-        equalToDo.push(dotString)
-        tela.append(dotString)
-        console.log(equalToDo)
+        if (haveDotInside < 1) {
+            equalToDo.push(dotString)
+            tela.append(dotString)
+        } else return
     }
 }

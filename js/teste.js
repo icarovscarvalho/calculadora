@@ -20,3 +20,19 @@
 // raizQuadrada(81)
 // const num = 81
 // console.log(Math.sqrt(num))
+
+// const equalToDo = ['a','b','c','d','f','g','h','i','j']
+// let dotVerif = false
+
+// for (let i = 0; i < equalToDo.length; i++) {
+//     if (equalToDo[i] == '.') {
+//         console.log(`A letra "${equalToDo[i]}" está na posição ${i}`);
+//         dotVerif = true
+//         break
+//     } else {
+//         if (dotVerif == false) {
+//             equalToDo.push('.')
+//         }
+//         dotVerif = false
+//     }
+// }
